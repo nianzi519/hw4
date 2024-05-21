@@ -2,11 +2,23 @@
 <html lang="zh-Hant">
 <head>
     <meta charset="UTF-8">
-    <title>
-        馬鈴薯
-    </title>
+    <title>商品價格管理</title>
+    <script src="main.js" defer></script>
 </head>
 <body>
-
+<h1>商品價格管理</h1>
+<div>
+    <h2>輸入商品</h2>
+    <input type="text" id="date" placeholder="日期 (YYYY/MM)" required>
+    <input type="text" id="name" placeholder="商品名稱" required>
+    <input type="number" step="0.01" id="price" placeholder="商品價格" required>
+    <button onclick="addProduct()">提交</button>
+</div>
+<div>
+    <h2>查詢商品</h2>
+    <input type="text" id="search" placeholder="搜尋商品名稱">
+    <button onclick="searchProducts()">查詢</button>
+    <div id="results"></div>
+</div>
 </body>
 </html>
